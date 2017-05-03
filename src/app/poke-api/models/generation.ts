@@ -1,4 +1,4 @@
-import {Model} from "../../rest-api/models/model";
+import {Model} from "../../ng-rapi/models/model";
 import {Region, RegionResponse} from "./region";
 import {Version, VersionResponse} from "./version";
 
