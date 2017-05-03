@@ -1,4 +1,4 @@
-import {Model} from "../../rest-api/models/model";
+import {Model} from "../../ng-rapi/models/model";
 
 export interface PokemonResponse {
     id: number;
