@@ -1,4 +1,4 @@
-import {Model} from "./model";
+import {Model} from "../../rest-api/models/model";
 import {Region, RegionResponse} from "./region";
 import {Version, VersionResponse} from "./version";
 

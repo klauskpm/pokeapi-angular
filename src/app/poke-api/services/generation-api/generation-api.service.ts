@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {PokeApiService} from "../poke-api.service";
-import {Generation, GenerationResponse} from "../../../../models/generation";
+import {Generation, GenerationResponse} from "../../models/generation";
 import {Http} from "@angular/http";
 import {Observable} from "rxjs/Observable";
 

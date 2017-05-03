@@ -1,4 +1,4 @@
-import {Model} from "./model";
+import {Model} from "../../rest-api/models/model";
 
 export interface PokemonResponse {
     id: number;

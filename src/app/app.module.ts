@@ -3,11 +3,10 @@ import {NgModule} from '@angular/core';
 /** Modules **/
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-import {RestApiModule} from "./rest-api/rest-api.module";
 
 /** Components **/
 import {AppComponent} from './app.component';
+import {PokeApiModule} from "./poke-api/poke-api.module";
 
 @NgModule({
     declarations: [
@@ -16,8 +15,7 @@ import {AppComponent} from './app.component';
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule,
-        RestApiModule
+        PokeApiModule
     ],
     providers: [],
     bootstrap: [AppComponent]

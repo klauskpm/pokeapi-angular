@@ -1,16 +1,17 @@
-import {Model} from "./model";
+import {Model} from "../../rest-api/models/model";
 
-export interface VersionResponse {
+export interface RegionResponse {
     name: string;
     url: string;
 }
 
-export class Version extends Model {
+export class Region extends Model {
     private _name: string;
     private _url: string;
 
-    constructor(data: VersionResponse) {
+    constructor(data: RegionResponse) {
         super(data);
+
         let {name, url} = data;
 
         this.name = name;

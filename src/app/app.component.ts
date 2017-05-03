@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import {PokemonApiService} from "./rest-api/services/api/poke-api/pokemon-api/pokemon-api.service";
-import {GenerationApiService} from "./rest-api/services/api/poke-api/generation-api/generation-api.service";
-import {Generation} from "./rest-api/models/generation";
+import {GenerationApiService} from "./poke-api/services/generation-api/generation-api.service";
+import {Generation} from "./poke-api/models/generation";
 
 
 @Component({
@@ -15,8 +14,7 @@ export class AppComponent {
 
   constructor(api: GenerationApiService) {
       const onSuccess = (data: Generation) => {
-          console.log(data.getMainRegion());
-
+          console.log(data);
       };
 
       api.getGenerationById(5)
