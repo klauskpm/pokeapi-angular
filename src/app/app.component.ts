@@ -17,7 +17,11 @@ export class AppComponent {
           console.log(data);
       };
 
+      const onError = (error) => {
+          console.log(error);
+      };
+
       api.getGenerationById(5)
-          .subscribe(onSuccess);
+          .subscribe(onSuccess, onError);
   }
 }
